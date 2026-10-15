@@ -115,7 +115,9 @@ LangChain API 变更：新版 LangChain (v1.0+) 已弃用 create_react_agent，�
 Ubuntu Server 无图形界面：云服务器选 Server 版镜像即可，通过 SSH + MobaXterm 操作。
 
 ## 后续计划
+```
 □ 接入 ChromaDB RAG 知识库，让 Agent 检索最佳实践文档
 □ 增加 Kafka / Elasticsearch 巡检工具
 □ 接入飞书/钉钉 Webhook，定时推送巡检报告
 □ 打包 Docker 镜像，部署到 K8s 集群
+```
