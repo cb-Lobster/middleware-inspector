@@ -14,6 +14,7 @@
 - 支持扩展新工具（Kafka、Elasticsearch 等）
 
 ## 架构
+```
 用户输入
 ↓
 ReAct Agent (LangChain + DeepSeek)
@@ -23,6 +24,7 @@ ReAct Agent (LangChain + DeepSeek)
 └── nginx_health_check()
 ↓
 巡检报告
+```
 
 ## 技术栈
 
@@ -75,7 +77,7 @@ python -m agent.main
 帮我巡检所有中间件
 ```
 ## 项目结构
-
+```
 middleware-inspector/
 ├── agent/
 │   ├── main.py              # Agent 入口
@@ -88,7 +90,7 @@ middleware-inspector/
 ├── requirements.txt         # Python 依赖
 ├── .env.example             # 环境变量模板
 └── README.md
-
+```
 ## 示例输出
 巡检报告：
 
