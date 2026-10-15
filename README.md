@@ -110,15 +110,13 @@ middleware-inspector/
 - Redis：建议配置 maxmemory + allkeys-lru 策略
 
 ## 踩坑记录
-Docker 拉取镜像超时：国内服务器拉取 Docker Hub 镜像会超时，配置腾讯云内网镜像源 mirror.ccs.tencentyun.com 解决。
-LangChain API 变更：新版 LangChain (v1.0+) 已弃用 create_react_agent，改用 create_agent，调用方式和输出格式也变了。
-工具函数 print vs return：Agent 工具必须 return 字符串给 LLM，用 print 会导致 LLM 读不到结果。
-Ubuntu Server 无图形界面：云服务器选 Server 版镜像即可，通过 SSH + MobaXterm 操作。
+- **Docker 拉取镜像超时**：国内服务器拉取 Docker Hub 镜像会超时，配置腾讯云内网镜像源 `mirror.ccs.tencentyun.com` 解决。
+- **LangChain API 变更**：新版 LangChain (v1.0+) 已弃用 `create_react_agent`，改用 `create_agent`，调用方式和输出格式也变了。
+- **工具函数 print vs return**：Agent 工具必须 `return` 字符串给 LLM，用 `print` 会导致 LLM 读不到结果。
+- **Ubuntu Server 无图形界面**：云服务器选 Server 版镜像即可，通过 SSH + MobaXterm 操作。
 
 ## 后续计划
-```
-□ 接入 ChromaDB RAG 知识库，让 Agent 检索最佳实践文档
-□ 增加 Kafka / Elasticsearch 巡检工具
-□ 接入飞书/钉钉 Webhook，定时推送巡检报告
-□ 打包 Docker 镜像，部署到 K8s 集群
-```
+- [ ] 接入 ChromaDB RAG 知识库，让 Agent 检索最佳实践文档
+- [ ] 增加 Kafka / Elasticsearch 巡检工具
+- [ ] 接入飞书/钉钉 Webhook，定时推送巡检报告
+- [ ] 打包 Docker 镜像，部署到 K8s 集群
