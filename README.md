@@ -92,6 +92,7 @@ middleware-inspector/
 └── README.md
 ```
 ## 示例输出
+```
 巡检报告：
 
 ## 健康状态总结
@@ -100,7 +101,7 @@ middleware-inspector/
 | Redis | ✅ 正常 | 内存 1.13M / 连接 1 / 慢查询 0 |
 | MySQL | ✅ 正常 | 连接 1/151 / 慢查询 0 |
 | Nginx | ✅ 正常 | HTTP 200 |
-
+```
 ## 风险项
 - Nginx 返回默认欢迎页，未配置业务站点
 
